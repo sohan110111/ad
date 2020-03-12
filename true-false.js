@@ -1,5 +1,5 @@
 // false condition :
-//     "", '', 0, false, NaN, undefined, null;
+//     "", '', 0, false, NaN, undefined, null, ``(null template);
 // some true condition :
 //     "0", '0', true, [], {};
 
@@ -43,4 +43,12 @@ if (number || number==0) {  // here this condition is true for number==0
 }
 else {
     console.log("Condition is false.");
+}
+
+let template = ``;
+if (template) { 
+    console.log("tem is true.")
+}
+else {
+    console.log("null-tem is false.");
 }
